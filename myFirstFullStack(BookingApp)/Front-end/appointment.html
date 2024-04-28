@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <link rel="stylesheet" href="/FullStack/Back-end/public/app.css">
+</head>
+<body>
+    <div><label for="name"><h1>Registration form</h1></label></div>
+    <hr>
+    <div >
+        <form id="form">
+            <label for="nameField">Name</label><br>
+            <input type="text" id="nameField" name="NameField"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="num">PhoneNumber</label><br>
+            <input type="number" id="num" name="num"><br>
+            <button type="submit">Submit</button><br>
+        </form>
+    </div>
+    
+    <ul id="item-list-group"></ul>
+    <script src="appointment.js"></script>
+</body>
+</html>
