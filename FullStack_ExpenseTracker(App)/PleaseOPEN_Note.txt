@@ -1,0 +1,3 @@
+I've delete 'node modules' folder from Back-end folder.
+Please hit 'npm install' in the integrated terminal from app.js and then start the server.
+'   :)  '
