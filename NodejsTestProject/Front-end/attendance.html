@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <style>
+        .styling{
+            margin: .5rem;
+            padding: .5rem;
+        }
+        #nav-field{
+            margin-top: 2rem;
+            padding: 1rem;
+        }
+        #main-nav, #mark{
+            background-color: orange;
+            
+        }
+        #searchBtn{
+            background-color: rgb(44, 113, 241);
+            color: white; 
+        }
+       
+        #fetch-btn{
+            float: right;
+            margin-right: 12rem;
+            margin-top: .5rem;
+            color: white;
+            border-radius: 6px solid white;
+            background-color: rgb(37, 116, 54);
+        }
+        main{
+            height: 25rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="main-head">
+        <nav id="main-nav">
+            <div id="nav-field">
+                <form id="search">
+                    <label for="date"><strong>Select a Date</strong></label>
+                    <input type="date" id="date" class="styling" name="date">
+                    <button type="submit" id="searchBtn" class="styling" >Search</button>
+                    <button type="click" id="fetch-btn" class="styling">Fetch all Attendance</button>
+                </form>
+            </div>
+        </nav>
+    </header><hr>
+    <main>
+        <ul id="list">
+               <!-- Abhay <input type="radio" name="present" value="present">Present<input type="radio" name="present" value="present">Absent -->
+        </ul>
+        
+    </main><hr>
+    <div>
+        <button id="mark" class="styling" type="click" name="mark">Mark as attendance</button>
+    </div>
+    <script src="attendance.js"></script>
+</body>
+</html>
